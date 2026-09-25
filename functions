@@ -19,7 +19,7 @@ char *inverter(char *s) {
 }
 
 //FUNÇÃO MOVER
-#include <stdio.h>
+
 void deslocar (char *s, int n){
     int i=0;
     while(s[i]!='\0'){
@@ -37,3 +37,21 @@ void deslocar (char *s, int n){
         printf("\n");
     }    
 }
+
+// INVERTER MAIUSCULAS/MINUSCULAS
+
+char *trocarParesImpares(char *s) {
+    int i;
+    int tam = 0;
+    // tamanho da string
+    while (s[tam] != '\0') {
+        tam++;
+    }
+
+    for (i = 0; i + 1 < tam; i+=2) {
+            char tmp = s[i];
+            s[i] = s[i + 1];
+            s[i + 1] = tmp;
+        }
+        return s;
+    }
