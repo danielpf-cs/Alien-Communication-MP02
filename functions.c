@@ -69,7 +69,6 @@ char *trocarParesImpares(char *s)
 
 // FUNÇÃO INVERTER CAIXA
 
-#include <stdio.h>
 void inverterCaixa(char *s)
 {
     int i;
