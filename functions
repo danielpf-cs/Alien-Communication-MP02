@@ -18,7 +18,7 @@ char *inverter(char *s) {
     return s;
 }
 
-//FUNÇÃO MOVER
+// FUNÇÃO MOVER
 
 void deslocar (char *s, int n){
     int i=0;
@@ -38,7 +38,7 @@ void deslocar (char *s, int n){
     }    
 }
 
-// INVERTER MAIUSCULAS/MINUSCULAS
+// FUNÇÃO TROCAR PARES E IMPARES
 
 char *trocarParesImpares(char *s) {
     int i;
@@ -55,3 +55,19 @@ char *trocarParesImpares(char *s) {
         }
         return s;
     }
+
+// FUNÇÃO INVERTER CAIXA 
+
+#include <stdio.h>
+void inverterCaixa (char *s){
+    int i;
+    while(s[i]!='0'){
+        if(s[i]>='a' && s[i]<='z'){
+            s[i] -= 32;
+        }else if(s[i]>='A' && s[i]<='Z'){
+            s[i] +=32; 
+        }
+        printf("%c", s[i]);
+        i++;
+    }
+}
