@@ -119,3 +119,29 @@ void rotacionar (char *s, int n){
     printf("\n");
 
 }
+
+// FUNÇÃO TROCA DE METADES 
+
+ char *trocarMetades(char *s)
+{
+    int tam = 0;
+    int i;
+
+    // tamanho da string
+    while (s[tam] != '\0')
+    {
+        tam++;
+    }
+
+    int metade = tam / 2;
+    int inicio2 = metade + tam % 2;
+
+    for (i = 0; i < metade; i++)
+    {
+        char tmp = s[i];
+        s[i] = s[inicio2 + i];
+        s[inicio2 + i] = tmp;
+    }
+
+    return s;
+}
