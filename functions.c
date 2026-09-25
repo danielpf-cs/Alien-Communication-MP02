@@ -86,3 +86,36 @@ void inverterCaixa(char *s)
         i++;
     }
 }
+
+// FUNÇÃO ROTACIONAR
+
+#include <stdio.h>
+
+void rotacionar (char *s, int n){
+
+    int tam=0;
+    int j;
+    
+    char tmp [256];
+    
+    while(s[tam]!='\0'){
+        
+        tam++;
+    
+    }
+    
+    for(j=0;j<tam;j++){
+    
+        tmp[j] = s[(j + n) % tam]; 
+    
+    }
+    
+    for(j=0;j<tam;j++){
+        s[j]=tmp[j];
+        
+        printf("%c", tmp[j]);
+    }
+    
+    printf("\n");
+
+}
