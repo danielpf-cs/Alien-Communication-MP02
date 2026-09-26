@@ -18,7 +18,7 @@ Fraga escrevendo os testes:
 Compilar:
 
 ```bash
-gcc -Wall -Wextra functions.c -o mp02
+gcc -Wall -Wextra mp02.c -o mp02
 ```
 
 Executar digitando a entrada no terminal:
