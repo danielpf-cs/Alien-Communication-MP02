@@ -116,7 +116,7 @@ void rotacionar(char *s, int n) {
     n = (n % tam + tam) % tam;
 
     for (j = 0; j < tam; j++) {
-        tmp[j] = s[(j + n) % tam];
+        tmp[j] = s[(j - n + tam) % tam];
     }
     for (j = 0; j < tam; j++) {
         s[j] = tmp[j];
