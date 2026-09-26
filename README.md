@@ -5,6 +5,14 @@
 - Daniel Pandolfo de Figueiredo
 - Gabriel Lemos de Oliveira
 
+Fraga escrevendo os testes:
+
+
+
+
+
+![Escrevendo em chamas](https://media1.tenor.com/m/w-L80nXWEjoAAAAC/pen-in-flames-umineko.gif)
+
 ## Instruções de compilação e execução
 
 Compilar:
@@ -102,5 +110,4 @@ Todas as funções recebem um ponteiro para a mensagem e a modificam no próprio
 - **Leitura da mensagem com `%1000[^\n]`:** lê a linha inteira, incluindo espaços, até o fim da linha. O limite de 1000 impede que uma entrada maior escreva fora do vetor, que tem 1001 posições para caber também o `'\0'`. O `\n` que sobra na entrada é ignorado pelo `scanf("%d")` seguinte.
 - **Leitura do `n` dentro do `case`:** garante que o valor de `n` nunca seja interpretado como um código de operação.
 
-Fraga escrevendo os testes:
-![Escrevendo em chamas](https://media1.tenor.com/m/w-L80nXWEjoAAAAC/pen-in-flames-umineko.gif)
+
