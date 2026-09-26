@@ -19,12 +19,6 @@ Executar digitando a entrada no terminal:
 ./mp02
 ```
 
-Executar usando um arquivo como entrada:
-
-```bash
-./mp02 < testes/inputs/input1.txt
-```
-
 ## Visão geral do sistema
 
 O programa recebe uma mensagem codificada e uma sequência de códigos de operação. Cada código aplica uma transformação sobre a mensagem, na ordem em que foi informado, e ao final o programa imprime a mensagem decodificada. Apenas a biblioteca `stdio.h` é utilizada.
