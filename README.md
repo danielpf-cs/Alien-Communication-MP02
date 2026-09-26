@@ -13,7 +13,7 @@ Realizado por: Daniel Pandolfo de Figueiredo e Gabriel Lemos de Oliveira
 | 5 | `rotacionar` | Rotaciona a mensagem `n` posições para a direita. |
 | 6 | `trocarMetades` | Troca a primeira metade da mensagem com a segunda. Se o tamanho for ímpar, o caractere do meio permanece no lugar. |
 
-##Estrutura do código
+## Estrutura do código
 
 O código está no arquivo functions.c, organizado em três partes:
 
