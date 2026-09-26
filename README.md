@@ -15,25 +15,10 @@ Realizado por: Daniel Pandolfo de Figueiredo e Gabriel Lemos de Oliveira
 
 
 ```mermaid
-flowchart TD
-    A([Início]) --> B["Lê a mensagem"]
-    B --> C["Lê o código da operação"]
-    C --> D{"Código entre 1 e 6?"}
-    D -- Não --> Z["Imprime a mensagem final"]
-    Z --> FIM([Fim])
-
-    D -- Sim --> S{"Qual operação?"}
-    S -- 1 --> O1["inverter"]
-    S -- 2 --> N2["Lê n"] --> O2["deslocar n posições"]
-    S -- 3 --> O3["trocarParesImpares"]
-    S -- 4 --> O4["inverterCaixa"]
-    S -- 5 --> N5["Lê n"] --> O5["rotacionar n posições"]
-    S -- 6 --> O6["trocarMetades"]
-
-    O1 --> C
-    O2 --> C
-    O3 --> C
-    O4 --> C
-    O5 --> C
-    O6 --> C
+flowchart LR
+    A["Lê a mensagem"] --> B["Lê o código"]
+    B --> C{"Código válido?"}
+    C -- Sim --> D["Aplica a transformação"]
+    D --> B
+    C -- Não --> E["Imprime o resultado"]
 ```
