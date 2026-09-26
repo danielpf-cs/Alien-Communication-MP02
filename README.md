@@ -7,7 +7,7 @@ Realizado por: Daniel Pandolfo de Figueiredo e Gabriel Lemos de Oliveira
 O código está no arquivo functions.c, organizado em três partes:
 
 Protótipos de todas as funções, no topo do arquivo, para que o main possa chamá-las antes das definições.
-main, responsável pela leitura da entrada, pelo laço de operações e pela impressão do resultado.
+Main, responsável pela leitura da entrada, pelo laço de operações e pela impressão do resultado.
 Implementação das funções, uma para cada transformação, mais a função auxiliar tamanho.
 
 ```mermaid
